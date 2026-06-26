@@ -1,0 +1,114 @@
+.vista {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 60vh;
+  padding: 16px;
+  background-image: linear-gradient(to bottom, rgba(19, 19, 22, 0.1), var(--color-fondo)), url("../img-pelis/Superman.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.boton-volver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--color-texto);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.boton-volver svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hero-titulo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.hero-metadata {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--color-tenue);
+}
+
+.contenido-detalle {
+  padding: 24px 16px 80px;
+}
+
+.sinopsis {
+  margin-bottom: 32px;
+}
+
+.etiqueta {
+  margin-bottom: 8px;
+  color: var(--color-acento);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sinopsis p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-tenue);
+}
+
+.funciones-encabezado {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.funciones-encabezado h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.fecha {
+  font-size: 13px;
+  color: var(--color-tenue);
+}
+
+.grilla-funciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.funcion {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  text-align: left;
+  background-color: var(--color-superficie);
+  border: 1px solid var(--borde-sutil);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.hora {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-texto);
+}
+
+.sala {
+  font-size: 13px;
+  color: var(--color-tenue);
+}
