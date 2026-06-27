@@ -1,0 +1,123 @@
+.vista {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.confirmacion {
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.sello-exito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  background-color: var(--color-acento);
+  border-radius: 16px;
+}
+
+.icono-exito {
+  width: 32px;
+  height: 32px;
+}
+
+.titulo-exito {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.subtitulo-exito {
+  margin: 8px 0 32px;
+  font-size: 14px;
+  color: var(--color-tenue);
+}
+
+.ticket {
+  padding: 24px;
+  text-align: left;
+  background-color: var(--color-superficie);
+  border-radius: 16px;
+}
+
+.ticket-pelicula {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.ticket-genero {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--color-tenue);
+}
+
+.divisor {
+  margin: 20px 0;
+  border-top: 1px dashed var(--borde-sutil);
+}
+
+.ticket-datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dato {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dato-etiqueta {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-tenue);
+}
+
+.dato-valor {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ticket-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.ticket-precio {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-acento);
+}
+
+.boton-inicio {
+  width: 100%;
+  margin-top: 32px;
+  padding: 16px;
+  font-family: var(--fuente);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-fondo);
+  background-color: var(--color-acento);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.enlace-detalles {
+  width: 100%;
+  margin-top: 16px;
+  padding: 8px;
+  font-family: var(--fuente);
+  font-size: 14px;
+  color: var(--color-tenue);
+  text-decoration: underline;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
