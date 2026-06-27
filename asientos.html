@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selección de asientos — CINEPLEX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/comun.css">
+  <link rel="stylesheet" href="estilos/asientos.css">
+</head>
+<body>
+  <div class="vista">
+    <header class="encabezado-asientos">
+      <button class="boton-volver" type="button" aria-label="Volver">
+        <img class="icono-volver" src="img-pelis/Iconos/flecha-izquierda.png" alt="">
+      </button>
+      <div class="info-funcion">
+        <h1 class="titulo-funcion">Superman</h1>
+        <p class="subtitulo-funcion">Hoy 19:00 · Sala 1</p>
+      </div>
+      <button class="boton-info" type="button" aria-label="Información de la sala">
+        <img class="icono-info" src="img-pelis/Iconos/icono-info.png" alt="">
+      </button>
+    </header>
+
+    <main class="contenido-asientos">
+      <div class="pantalla"></div>
+      <p class="pantalla-texto">Pantalla</p>
+
+      <div class="mapa">
+        <span class="esquina"></span>
+        <span class="numero">1</span>
+        <span class="numero">2</span>
+        <span class="numero">3</span>
+        <span class="numero">4</span>
+        <span class="numero">5</span>
+        <span class="numero">6</span>
+        <span class="numero">7</span>
+        <span class="numero">8</span>
+
+        <span class="letra">A</span>
+        <button class="asiento ocupado" type="button" aria-label="Asiento A1" disabled></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento A2" disabled></button>
+        <button class="asiento" type="button" aria-label="Asiento A3"></button>
+        <button class="asiento" type="button" aria-label="Asiento A4"></button>
+        <button class="asiento" type="button" aria-label="Asiento A5"></button>
+        <button class="asiento" type="button" aria-label="Asiento A6"></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento A7" disabled></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento A8" disabled></button>
+
+        <span class="letra">B</span>
+        <button class="asiento ocupado" type="button" aria-label="Asiento B1" disabled></button>
+        <button class="asiento" type="button" aria-label="Asiento B2"></button>
+        <button class="asiento" type="button" aria-label="Asiento B3"></button>
+        <button class="asiento" type="button" aria-label="Asiento B4"></button>
+        <button class="asiento" type="button" aria-label="Asiento B5"></button>
+        <button class="asiento" type="button" aria-label="Asiento B6"></button>
+        <button class="asiento" type="button" aria-label="Asiento B7"></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento B8" disabled></button>
+
+        <span class="letra">C</span>
+        <button class="asiento" type="button" aria-label="Asiento C1"></button>
+        <button class="asiento" type="button" aria-label="Asiento C2"></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento C3" disabled></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento C4" disabled></button>
+        <button class="asiento" type="button" aria-label="Asiento C5"></button>
+        <button class="asiento" type="button" aria-label="Asiento C6"></button>
+        <button class="asiento" type="button" aria-label="Asiento C7"></button>
+        <button class="asiento" type="button" aria-label="Asiento C8"></button>
+
+        <span class="letra">D</span>
+        <button class="asiento" type="button" aria-label="Asiento D1"></button>
+        <button class="asiento" type="button" aria-label="Asiento D2"></button>
+        <button class="asiento" type="button" aria-label="Asiento D3"></button>
+        <button class="asiento" type="button" aria-label="Asiento D4"></button>
+        <button class="asiento" type="button" aria-label="Asiento D5"></button>
+        <button class="asiento" type="button" aria-label="Asiento D6"></button>
+        <button class="asiento" type="button" aria-label="Asiento D7"></button>
+        <button class="asiento" type="button" aria-label="Asiento D8"></button>
+
+        <span class="letra">E</span>
+        <button class="asiento" type="button" aria-label="Asiento E1"></button>
+        <button class="asiento" type="button" aria-label="Asiento E2"></button>
+        <button class="asiento" type="button" aria-label="Asiento E3"></button>
+        <button class="asiento" type="button" aria-label="Asiento E4"></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento E5" disabled></button>
+        <button class="asiento" type="button" aria-label="Asiento E6"></button>
+        <button class="asiento" type="button" aria-label="Asiento E7"></button>
+        <button class="asiento" type="button" aria-label="Asiento E8"></button>
+
+        <span class="letra">F</span>
+        <button class="asiento" type="button" aria-label="Asiento F1"></button>
+        <button class="asiento" type="button" aria-label="Asiento F2"></button>
+        <button class="asiento" type="button" aria-label="Asiento F3"></button>
+        <button class="asiento" type="button" aria-label="Asiento F4"></button>
+        <button class="asiento seleccionado" type="button" aria-label="Asiento F5"></button>
+        <button class="asiento seleccionado" type="button" aria-label="Asiento F6"></button>
+        <button class="asiento" type="button" aria-label="Asiento F7"></button>
+        <button class="asiento" type="button" aria-label="Asiento F8"></button>
+
+        <span class="letra">G</span>
+        <button class="asiento" type="button" aria-label="Asiento G1"></button>
+        <button class="asiento" type="button" aria-label="Asiento G2"></button>
+        <button class="asiento" type="button" aria-label="Asiento G3"></button>
+        <button class="asiento" type="button" aria-label="Asiento G4"></button>
+        <button class="asiento" type="button" aria-label="Asiento G5"></button>
+        <button class="asiento" type="button" aria-label="Asiento G6"></button>
+        <button class="asiento" type="button" aria-label="Asiento G7"></button>
+        <button class="asiento" type="button" aria-label="Asiento G8"></button>
+
+        <span class="letra">H</span>
+        <button class="asiento ocupado" type="button" aria-label="Asiento H1" disabled></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento H2" disabled></button>
+        <button class="asiento" type="button" aria-label="Asiento H3"></button>
+        <button class="asiento" type="button" aria-label="Asiento H4"></button>
+        <button class="asiento" type="button" aria-label="Asiento H5"></button>
+        <button class="asiento" type="button" aria-label="Asiento H6"></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento H7" disabled></button>
+        <button class="asiento ocupado" type="button" aria-label="Asiento H8" disabled></button>
+      </div>
+
+      <div class="leyenda">
+        <span class="leyenda-item"><span class="muestra"></span>Disponible</span>
+        <span class="leyenda-item"><span class="muestra seleccionado"></span>Seleccionado</span>
+        <span class="leyenda-item"><span class="muestra ocupado"></span>Ocupado</span>
+      </div>
+    </main>
+
+    <footer class="pie">
+      <div class="resumen-fila">
+        <span class="resumen-etiqueta">Asientos</span>
+        <span class="resumen-valor">F5, F6</span>
+      </div>
+      <div class="resumen-fila">
+        <span class="resumen-etiqueta">Total</span>
+        <span class="resumen-total">$10.00</span>
+      </div>
+      <button class="boton-continuar" type="button">Continuar</button>
+    </footer>
+  </div>
+</body>
+</html>
