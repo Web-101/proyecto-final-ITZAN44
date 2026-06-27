@@ -1,0 +1,145 @@
+.vista {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.encabezado-formulario {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--color-fondo);
+  border-bottom: 1px solid var(--borde-sutil);
+}
+
+.boton-volver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icono-volver {
+  width: 22px;
+  height: 22px;
+}
+
+.titulo-encabezado {
+  flex: 1;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.espaciador {
+  width: 40px;
+}
+
+.formulario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-formulario {
+  flex: 1;
+  padding: 24px 16px;
+}
+
+.resumen-pedido {
+  margin-bottom: 32px;
+  padding: 20px;
+  background-color: var(--color-superficie);
+  border-radius: 12px;
+}
+
+.etiqueta-seccion {
+  margin-bottom: 16px;
+  color: var(--color-acento);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.resumen-fila {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.resumen-etiqueta {
+  font-size: 14px;
+  color: var(--color-tenue);
+}
+
+.resumen-valor {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.divisor {
+  margin: 16px 0;
+  border-top: 1px dashed var(--borde-sutil);
+}
+
+.resumen-total {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-acento);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.campo label {
+  font-size: 14px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 14px;
+  font-family: var(--fuente);
+  font-size: 15px;
+  color: var(--color-texto);
+  background-color: var(--color-superficie);
+  border: 1px solid var(--borde-sutil);
+  border-radius: 10px;
+}
+
+.campo input::placeholder {
+  color: var(--color-tenue);
+}
+
+.pie {
+  padding: 16px;
+  background-color: var(--color-fondo);
+  border-top: 1px solid var(--borde-sutil);
+}
+
+.boton-finalizar {
+  width: 100%;
+  padding: 16px;
+  font-family: var(--fuente);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-fondo);
+  background-color: var(--color-acento);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}

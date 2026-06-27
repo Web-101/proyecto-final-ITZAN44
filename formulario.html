@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar compra — CINEPLEX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/comun.css">
+  <link rel="stylesheet" href="estilos/formulario.css">
+</head>
+<body>
+  <div class="vista">
+    <header class="encabezado-formulario">
+      <button class="boton-volver" type="button" aria-label="Volver">
+        <img class="icono-volver" src="img-pelis/Iconos/flecha-izquierda.png" alt="">
+      </button>
+      <h1 class="titulo-encabezado">Finalizar Compra</h1>
+      <span class="espaciador"></span>
+    </header>
+
+    <form class="formulario">
+      <div class="contenido-formulario">
+        <section class="resumen-pedido">
+          <p class="etiqueta-seccion">Resumen del pedido</p>
+          <div class="resumen-fila">
+            <span class="resumen-etiqueta">Película</span>
+            <span class="resumen-valor">Superman</span>
+          </div>
+          <div class="resumen-fila">
+            <span class="resumen-etiqueta">Función</span>
+            <span class="resumen-valor">Hoy 19:00 · Sala 1</span>
+          </div>
+          <div class="resumen-fila">
+            <span class="resumen-etiqueta">Asientos</span>
+            <span class="resumen-valor">F5, F6</span>
+          </div>
+          <div class="divisor"></div>
+          <div class="resumen-fila">
+            <span class="resumen-etiqueta">Total</span>
+            <span class="resumen-total">$10.00</span>
+          </div>
+        </section>
+
+        <section class="datos">
+          <p class="etiqueta-seccion">Tus datos</p>
+          <div class="campo">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez">
+          </div>
+          <div class="campo">
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="tu@email.com">
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono (Opcional)</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+591 70978877">
+          </div>
+        </section>
+      </div>
+
+      <div class="pie">
+        <button class="boton-finalizar" type="submit">Finalizar Compra</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
