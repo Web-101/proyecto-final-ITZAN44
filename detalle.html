@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Superman — CINEPLEX</title>
+  <title>CINEPLEX</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos/comun.css">
   <link rel="stylesheet" href="estilos/detalle.css">
@@ -11,57 +11,32 @@
 <body>
   <div class="vista">
     <header class="hero">
-      <button class="boton-volver" type="button" aria-label="Volver">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="19" y1="12" x2="5" y2="12"></line>
-          <polyline points="12 19 5 12 12 5"></polyline>
-        </svg>
-      </button>
+      <a class="boton-volver" href="index.html" aria-label="Volver">
+        <img class="icono-volver" src="img-pelis/Iconos/flecha-izquierda.png" alt="">
+      </a>
       <div class="hero-info">
-        <h1 class="hero-titulo">Superman</h1>
-        <p class="hero-metadata">Acción · 2h 10min · +13</p>
+        <h1 class="hero-titulo"></h1>
+        <p class="hero-metadata"></p>
       </div>
     </header>
 
     <main class="contenido-detalle">
       <section class="sinopsis">
         <h2 class="etiqueta">Sinopsis</h2>
-        <p>El último hijo de Krypton vive entre dos mundos: reportero de día y símbolo de esperanza de noche. Cuando una amenaza pone en jaque a la humanidad, deberá demostrar que su mayor fuerza no son sus poderes, sino su corazón.</p>
+        <p></p>
       </section>
 
       <section class="funciones">
         <div class="funciones-encabezado">
           <h2>Funciones de hoy</h2>
-          <span class="fecha">Martes 23 de Junio</span>
+          <span class="fecha">Hoy</span>
         </div>
-        <div class="grilla-funciones">
-          <button class="funcion" type="button">
-            <span class="hora">14:00</span>
-            <span class="sala">Sala 1 · $5</span>
-          </button>
-          <button class="funcion" type="button">
-            <span class="hora">16:30</span>
-            <span class="sala">Sala 3 · $5</span>
-          </button>
-          <button class="funcion" type="button">
-            <span class="hora">19:00</span>
-            <span class="sala">Sala 1 · $5</span>
-          </button>
-          <button class="funcion" type="button">
-            <span class="hora">19:45</span>
-            <span class="sala">Sala 4 · $5</span>
-          </button>
-          <button class="funcion" type="button">
-            <span class="hora">21:30</span>
-            <span class="sala">Sala 2 · $5</span>
-          </button>
-          <button class="funcion" type="button">
-            <span class="hora">22:15</span>
-            <span class="sala">Sala 3 · $5</span>
-          </button>
-        </div>
+        <div class="grilla-funciones"></div>
       </section>
     </main>
   </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/detalle.js"></script>
 </body>
 </html>

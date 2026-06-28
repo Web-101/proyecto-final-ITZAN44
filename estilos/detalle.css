@@ -10,7 +10,6 @@
   justify-content: space-between;
   min-height: 60vh;
   padding: 16px;
-  background-image: linear-gradient(to bottom, rgba(19, 19, 22, 0.1), var(--color-fondo)), url("../img-pelis/Superman.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -21,14 +20,11 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  color: var(--color-texto);
   background-color: rgba(0, 0, 0, 0.4);
-  border: none;
   border-radius: 50%;
-  cursor: pointer;
 }
 
-.boton-volver svg {
+.icono-volver {
   width: 20px;
   height: 20px;
 }
@@ -96,10 +92,11 @@
   gap: 4px;
   padding: 16px;
   text-align: left;
+  color: inherit;
+  text-decoration: none;
   background-color: var(--color-superficie);
   border: 1px solid var(--borde-sutil);
   border-radius: 12px;
-  cursor: pointer;
 }
 
 .hora {
