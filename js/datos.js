@@ -8,10 +8,10 @@ const peliculas = [
     clasificacion: "+13",
     sinopsis: "El último hijo de Krypton vive entre dos mundos: reportero de día y símbolo de esperanza siempre. Cuando una amenaza pone en jaque a la humanidad, deberá demostrar que su mayor fuerza no son sus poderes, sino su corazón.",
     funciones: [
-      { id: "superman-f1", hora: "14:00", sala: "Sala 1", precio: 5 },
-      { id: "superman-f2", hora: "16:30", sala: "Sala 3", precio: 5 },
-      { id: "superman-f3", hora: "19:00", sala: "Sala 1", precio: 5 },
-      { id: "superman-f4", hora: "21:30", sala: "Sala 2", precio: 5 },
+      { id: "superman-f1", hora: "14:00", sala: "Sala 1", precio: 5, asientosOcupados: ["A1", "A2", "B5", "D4", "E5", "G7", "H8"] },
+      { id: "superman-f2", hora: "16:30", sala: "Sala 3", precio: 5, asientosOcupados: ["C3", "C4", "C5", "F1", "F2", "G8"] },
+      { id: "superman-f3", hora: "19:00", sala: "Sala 1", precio: 5, asientosOcupados: ["A1", "A2", "A7", "A8", "B1", "B8", "C3", "C4", "E5", "H1", "H2", "H7", "H8"] },
+      { id: "superman-f4", hora: "21:30", sala: "Sala 2", precio: 5, asientosOcupados: ["D1", "D2", "D3", "E6", "E7", "F4"] },
     ],
   },
   {
@@ -23,10 +23,10 @@ const peliculas = [
     clasificacion: "+16",
     sinopsis: "En una Gotham consumida por el crimen, un detective enmascarado persigue a un asesino que deja acertijos. La investigación lo obliga a enfrentar la corrupción de su propia ciudad.",
     funciones: [
-      { id: "batman-f1", hora: "15:00", sala: "Sala 2", precio: 5 },
-      { id: "batman-f2", hora: "18:00", sala: "Sala 4", precio: 5 },
-      { id: "batman-f3", hora: "20:30", sala: "Sala 1", precio: 5 },
-      { id: "batman-f4", hora: "22:45", sala: "Sala 3", precio: 5 },
+      { id: "batman-f1", hora: "15:00", sala: "Sala 2", precio: 5, asientosOcupados: ["B2", "B3", "C6", "E1", "H4", "H5"] },
+      { id: "batman-f2", hora: "18:00", sala: "Sala 4", precio: 5, asientosOcupados: ["A4", "A5", "D7", "D8", "G1", "G2", "G3"] },
+      { id: "batman-f3", hora: "20:30", sala: "Sala 1", precio: 5, asientosOcupados: ["C1", "C2", "F5", "F6", "H8"] },
+      { id: "batman-f4", hora: "22:45", sala: "Sala 3", precio: 5, asientosOcupados: ["A8", "B8", "C8", "D8", "E8"] },
     ],
   },
   {
@@ -38,9 +38,9 @@ const peliculas = [
     clasificacion: "ATP",
     sinopsis: "Un ogro gruñón ve su pantano invadido por criaturas de cuento. Para recuperar su soledad acepta rescatar a una princesa, sin imaginar que ese viaje le cambiará la vida.",
     funciones: [
-      { id: "shrek-f1", hora: "13:30", sala: "Sala 5", precio: 5 },
-      { id: "shrek-f2", hora: "15:45", sala: "Sala 2", precio: 5 },
-      { id: "shrek-f3", hora: "17:30", sala: "Sala 1", precio: 5 },
+      { id: "shrek-f1", hora: "13:30", sala: "Sala 5", precio: 5, asientosOcupados: ["A1", "B1", "C1", "D1"] },
+      { id: "shrek-f2", hora: "15:45", sala: "Sala 2", precio: 5, asientosOcupados: ["E4", "E5", "F4", "F5", "G4", "G5"] },
+      { id: "shrek-f3", hora: "17:30", sala: "Sala 1", precio: 5, asientosOcupados: ["A3", "A6", "H3", "H6"] },
     ],
   },
   {
@@ -52,9 +52,9 @@ const peliculas = [
     clasificacion: "+16",
     sinopsis: "En un futuro lluvioso, un cazador de replicantes recibe una última misión. Entre humanos y máquinas, la línea que los separa empieza a desdibujarse.",
     funciones: [
-      { id: "blade-runner-f1", hora: "16:00", sala: "Sala 3", precio: 5 },
-      { id: "blade-runner-f2", hora: "19:15", sala: "Sala 4", precio: 5 },
-      { id: "blade-runner-f3", hora: "22:00", sala: "Sala 2", precio: 5 },
+      { id: "blade-runner-f1", hora: "16:00", sala: "Sala 3", precio: 5, asientosOcupados: ["B2", "C3", "D4", "E5", "F6"] },
+      { id: "blade-runner-f2", hora: "19:15", sala: "Sala 4", precio: 5, asientosOcupados: ["A1", "A2", "A3", "A4", "H5", "H6", "H7", "H8"] },
+      { id: "blade-runner-f3", hora: "22:00", sala: "Sala 2", precio: 5, asientosOcupados: ["D3", "D4", "D5", "D6"] },
     ],
   },
   {
@@ -66,9 +66,9 @@ const peliculas = [
     clasificacion: "+13",
     sinopsis: "Un maestro de kung-fu venido a menos descubre a un joven con una patada extraordinaria. Juntos arman un equipo que mezcla artes marciales y fútbol.",
     funciones: [
-      { id: "shaolin-soccer-f1", hora: "14:30", sala: "Sala 1", precio: 5 },
-      { id: "shaolin-soccer-f2", hora: "17:00", sala: "Sala 5", precio: 5 },
-      { id: "shaolin-soccer-f3", hora: "19:30", sala: "Sala 3", precio: 5 },
+      { id: "shaolin-soccer-f1", hora: "14:30", sala: "Sala 1", precio: 5, asientosOcupados: ["C2", "C7", "F2", "F7"] },
+      { id: "shaolin-soccer-f2", hora: "17:00", sala: "Sala 5", precio: 5, asientosOcupados: ["A5", "B5", "C5", "G3", "G4"] },
+      { id: "shaolin-soccer-f3", hora: "19:30", sala: "Sala 3", precio: 5, asientosOcupados: ["E1", "E2", "E3", "H8"] },
     ],
   },
   {
@@ -80,9 +80,9 @@ const peliculas = [
     clasificacion: "ATP",
     sinopsis: "Un joven león destinado a reinar huye tras una tragedia. Lejos de casa aprende quién es realmente, hasta que el deber lo llama de vuelta.",
     funciones: [
-      { id: "rey-leon-f1", hora: "13:00", sala: "Sala 2", precio: 5 },
-      { id: "rey-leon-f2", hora: "15:30", sala: "Sala 1", precio: 5 },
-      { id: "rey-leon-f3", hora: "18:15", sala: "Sala 4", precio: 5 },
+      { id: "rey-leon-f1", hora: "13:00", sala: "Sala 2", precio: 5, asientosOcupados: ["B4", "B5", "C4", "C5"] },
+      { id: "rey-leon-f2", hora: "15:30", sala: "Sala 1", precio: 5, asientosOcupados: ["A1", "A8", "H1", "H8", "D4", "E5"] },
+      { id: "rey-leon-f3", hora: "18:15", sala: "Sala 4", precio: 5, asientosOcupados: ["F1", "F2", "F3", "G6", "G7"] },
     ],
   },
   {
@@ -94,9 +94,9 @@ const peliculas = [
     clasificacion: "ATP",
     sinopsis: "El felino más audaz y galán emprende una aventura para recuperar las nueve vidas que fue perdiendo. En el camino descubre lo que de verdad importa.",
     funciones: [
-      { id: "gato-con-botas-f1", hora: "14:15", sala: "Sala 5", precio: 5 },
-      { id: "gato-con-botas-f2", hora: "16:45", sala: "Sala 2", precio: 5 },
-      { id: "gato-con-botas-f3", hora: "18:30", sala: "Sala 1", precio: 5 },
+      { id: "gato-con-botas-f1", hora: "14:15", sala: "Sala 5", precio: 5, asientosOcupados: ["C3", "D3", "E3", "F3"] },
+      { id: "gato-con-botas-f2", hora: "16:45", sala: "Sala 2", precio: 5, asientosOcupados: ["A2", "B3", "C4", "D5", "E6"] },
+      { id: "gato-con-botas-f3", hora: "18:30", sala: "Sala 1", precio: 5, asientosOcupados: ["G1", "G2", "H1", "H2"] },
     ],
   },
   {
@@ -108,9 +108,9 @@ const peliculas = [
     clasificacion: "+18",
     sinopsis: "Un mercenario con humor ácido y un factor de curación imparable busca venganza. Romperá todas las reglas (y la cuarta pared) para conseguirla.",
     funciones: [
-      { id: "deadpool-f1", hora: "17:45", sala: "Sala 3", precio: 5 },
-      { id: "deadpool-f2", hora: "20:00", sala: "Sala 1", precio: 5 },
-      { id: "deadpool-f3", hora: "22:30", sala: "Sala 4", precio: 5 },
+      { id: "deadpool-f1", hora: "17:45", sala: "Sala 3", precio: 5, asientosOcupados: ["A4", "A5", "B4", "B5", "C4", "C5"] },
+      { id: "deadpool-f2", hora: "20:00", sala: "Sala 1", precio: 5, asientosOcupados: ["D7", "E7", "F7", "G7", "H7"] },
+      { id: "deadpool-f3", hora: "22:30", sala: "Sala 4", precio: 5, asientosOcupados: ["A1", "B2", "C3", "D4", "E5", "F6", "G7", "H8"] },
     ],
   },
 ];

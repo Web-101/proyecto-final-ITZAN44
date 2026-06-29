@@ -183,3 +183,8 @@
   border-radius: 12px;
   cursor: pointer;
 }
+
+.boton-continuar:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
