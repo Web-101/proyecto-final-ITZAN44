@@ -24,20 +24,20 @@
           <p class="etiqueta-seccion">Resumen del pedido</p>
           <div class="resumen-fila">
             <span class="resumen-etiqueta">Película</span>
-            <span class="resumen-valor">Superman</span>
+            <span class="resumen-valor"></span>
           </div>
           <div class="resumen-fila">
             <span class="resumen-etiqueta">Función</span>
-            <span class="resumen-valor">Hoy 19:00 · Sala 1</span>
+            <span class="resumen-valor"></span>
           </div>
           <div class="resumen-fila">
             <span class="resumen-etiqueta">Asientos</span>
-            <span class="resumen-valor">F5, F6</span>
+            <span class="resumen-valor"></span>
           </div>
           <div class="divisor"></div>
           <div class="resumen-fila">
             <span class="resumen-etiqueta">Total</span>
-            <span class="resumen-total">$10.00</span>
+            <span class="resumen-total"></span>
           </div>
         </section>
 
@@ -46,10 +46,12 @@
           <div class="campo">
             <label for="nombre">Nombre Completo</label>
             <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez">
+            <span class="mensaje-error"></span>
           </div>
           <div class="campo">
             <label for="correo">Correo Electrónico</label>
             <input type="email" id="correo" name="correo" placeholder="tu@email.com">
+            <span class="mensaje-error"></span>
           </div>
           <div class="campo">
             <label for="telefono">Teléfono (Opcional)</label>
@@ -63,5 +65,7 @@
       </div>
     </form>
   </div>
+
+  <script src="js/formulario.js"></script>
 </body>
 </html>

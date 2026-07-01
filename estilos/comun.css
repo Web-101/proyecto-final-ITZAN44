@@ -5,6 +5,7 @@
   --color-titulo: #E4E1E6;
   --color-tenue: rgba(255, 255, 255, 0.6);
   --color-superficie: #1c1c20;
+  --color-error: #e5484d;
   --borde-sutil: rgba(255, 255, 255, 0.05);
   --fuente: 'Inter', system-ui, -apple-system, sans-serif;
 }

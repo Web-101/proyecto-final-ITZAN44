@@ -125,6 +125,19 @@
   color: var(--color-tenue);
 }
 
+.campo input.invalido {
+  border-color: var(--color-error);
+}
+
+.mensaje-error {
+  font-size: 13px;
+  color: var(--color-error);
+}
+
+.mensaje-error:empty {
+  display: none;
+}
+
 .pie {
   padding: 16px;
   background-color: var(--color-fondo);
